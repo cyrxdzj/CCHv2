@@ -68,6 +68,8 @@ var lang_en = {
 		output: "Output",
 		copy: "Copy",
 		copied: "Copied",
+		copyCode: "Copy Code",
+		copyCodeSuccess: "Code copied successfully.",
 		forceLoadStandings: "Force Load Standings",
 		openProblems: "Open Problems",
 		submitSuccess: "Submit Success!",
@@ -159,8 +161,6 @@ var lang_en = {
 		contestInsertTime: "Insert Time",
 		showData: "Show Data",
 		showCode: "Show Code",
-		copyCode: "Copy Code",
-		copyCodeSuccessfully: "Copy code successfully.",
 		selectToShow: "Select a group of data.",
 		testcase: "Test",
 		allTestcase: "All Tests",
@@ -289,7 +289,7 @@ var lang_en = {
 			"Choose how history rank calculator deal with virtual information. Open this to remove them."
 		],
 		codeforcesApiUrl: [
-			"<span class='settingsInfoIcon fas fa-exchange-alt'></span> Codeforces API URL", 
+			"<span class='settingsInfoIcon fas fa-exchange-alt'></span> Codeforces API URL",
 			"Set the address of Codeforces APIs."
 		],
 		showProblemStatus: [
@@ -456,6 +456,8 @@ var lang_zh = {
 		output: "输出",
 		copy: "复制",
 		copied: "已复制",
+		copyCode: "复制代码",
+		copyCodeSuccess: "已复制代码",
 		forceLoadStandings: "强制加载排行榜",
 		openProblems: "打开问题界面",
 		submitSuccess: "提交成功！",
@@ -546,8 +548,6 @@ var lang_zh = {
 		contestInsertTime: "输入时间",
 		showData: "显示数据",
 		showCode: "显示代码",
-		copyCode: "复制代码",
-		copyCodeSuccessfully: "复制代码成功。",
 		selectToShow: "选择一组数据查看",
 		testcase: "测试点",
 		allTestcase: "所有测试点",
@@ -679,7 +679,7 @@ var lang_zh = {
 			"选择历史排名计算器如何处理虚拟赛数据。打开此设置以去除它们。"
 		],
 		codeforcesApiUrl: [
-			"<span class='settingsInfoIcon fas fa-exchange-alt'></span> Codeforces API 地址", 
+			"<span class='settingsInfoIcon fas fa-exchange-alt'></span> Codeforces API 地址",
 			"设置获取 Codeforces API 的地址。"
 		],
 		showProblemStatus: [
@@ -798,8 +798,9 @@ var lang_zh = {
 };
 var lang_list = ["English", "简体中文"];
 var lang_attr = ["en", "zh_cn"];
-function getLanguage(lang){
-	if(lang == "en")	return lang_en;
-	if(lang == "zh_cn")	return lang_zh;
+
+function getLanguage(lang) {
+	if (lang == "en") return lang_en;
+	if (lang == "zh_cn") return lang_zh;
 	return lang_en;
 }
